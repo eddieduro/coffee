@@ -1,0 +1,37 @@
+@import "zen-grids";// Import Zen Grids with this statement.
+
+$zen-columns: 12; // Set the number of columns in the grid.
+$zen-gutters: 10px; // Set the gutter size. A half-gutter is used on each side of each column.
+
+.l-main {
+ @include zen-grid-container(); // Apply this mixin to the container.
+}
+
+@for $i from 1 through $zen-columns{
+  .grid-4 {
+    position: relative;
+    left: -670px;
+    @include zen-grid-item(4, $i + 1);
+  }
+}
+
+//
+// .user-picture {
+//  @include zen-grid-item(4, 4); // Apply this mixin for each grid item in the container.
+// }
+//
+// article {
+//  @include zen-grid-item(4, 3); // Make this grid item span 4 columns… // …and position it in the 3rd column.
+// }
+//
+// .aside2 {
+//  @include zen-grid-item(1, 7);
+// }
+//
+// .footer1 {
+//  @include zen-new-row(); // Apply this mixin to start a new row.
+//  @include zen-grid-item(3, 5);
+// }
+// .footer2 {
+//  @include zen-grid-item(4, 1);
+// }

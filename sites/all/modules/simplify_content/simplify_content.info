@@ -1,0 +1,5 @@
+name = Simplify Content
+description = Remove unnecessary menu items
+package = My Custom Menu Items
+core = 7.x
+files[] = simplify_content.module

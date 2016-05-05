@@ -1,0 +1,5 @@
+/* Welcome to Compass. Use this file to write IE specific override styles. */
+/* line 42, ../scss/ie.scss */
+* {
+  border: 1px solid red;
+}
